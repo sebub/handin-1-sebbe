@@ -22,6 +22,6 @@ int main(void)
         seconds -= 60;
         minutes += 1;
     }
-    printf("weeks: %d, days: %d, hours: %d, minutes: %d, seconds: %d",weeks,days,hours,minutes,seconds);
+    printf("weeks: %d, days: %d, hours: %d, minutes: %d, seconds:  %d",weeks,days,hours,minutes,seconds);
 
 }
