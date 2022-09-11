@@ -8,17 +8,20 @@ int main(void)
     while(1)
     {
 
+        //Testing if the user inputs the expected type, if the input is different
+        //from an int it will run the while loop again
         if(scanf(" %d%c", &seconds, &tempchar) != 2 || tempchar != '\n') {
             printf(" Please enter a valid number\n");
         }
         else{
             printf(" You have entered %d seconds\n",seconds);
+            //breaks the loop if the user enters an integer
             break;
 
         }
+        //Used to empty the stdin(standard input)
         while(getchar() != '\n');
     }
-    printf("%d",seconds);
 
     if (seconds > 604800)
     {
